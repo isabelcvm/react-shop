@@ -1,0 +1,15 @@
+https://github.com/marketplace?type=&verification=&query=deploy+github+page+
+Deploy to GitHub Pages script
+Crear folder llamado “.github”, adentro otra llamada workflows, y adentro un archivo llamado deploy.yml
+Copiar el primer recurso y pegarlo de forma manual, personalizado en el archivo deploy.yml
+Cambiar el nombre de la carpeta “build” a “diste” ya que esa acciona todo
+Tener el repo actualizado y todo en la rama main o principal
+Podemos revisar en el repo, en actions que el workflow corra y finalice exitosamente
+￼
+Settings -> pages: Cambiar el source a la rama gh-pages y guardar
+Configurar dominio:
+Se pone el dominio en Custom Domain
+Ingresamos al dashboard de Cloudflare -> DNS
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Agregamos en Cloudflare los 4 apuntadores A que nos entrega GitHub
+Agregamos CNAME, con nombre www, que apunte a nuestro dominio personal
